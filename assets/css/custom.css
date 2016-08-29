@@ -169,11 +169,16 @@
   border-top: 5px solid #ea6153;
 }
 
+/* line 198, ../sass/custom.scss */
+.modal-backdrop {
+  background-color: white;
+}
+
 /*.footer {
 	background: $winit-black;
 }*/
 /* OWL CAROUSEL */
-/* line 203, ../sass/custom.scss */
+/* line 207, ../sass/custom.scss */
 .owl-carousel .owl-item {
   padding: 10px;
 }
