@@ -221,16 +221,6 @@ ul.blue-dropdown li {
   background-color: #3DC7E1;
   color: white;
 }
-
-/* override the hover color */
-.nav > li.active, .nav > li > a:hover, .nav > li > a:focus, .nav > li:hover > a {
-  background: #3DC7E1 none repeat
-}
-
-/* override the dropdown-menu padding */
-.dropdown-menu {
-  padding: 3px 0 0 0;
-}
 /* /blue nav */
 
 
@@ -297,7 +287,22 @@ li a.active {
   color: white;
 }
 
-/* Gives enouph padding so the navbar doesn't cover the content */
+/* Gives enough padding so the navbar doesn't cover the content */
 .content-wrapper {
-  padding-top: 80px;
+  padding-top: 83px;
+}
+
+/* Override the navbar border to remove the red line under the links */
+.navbar {
+  border: none;
+}
+
+/* override the hover color */
+.nav > li.active, .nav > li > a:hover, .nav > li > a:focus, .nav > li:hover > a {
+  background: #3DC7E1 none repeat
+}
+
+/* override the dropdown-menu padding */
+.dropdown-menu {
+  padding: 3px 0 0 0;
 }

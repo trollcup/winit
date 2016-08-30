@@ -22,6 +22,17 @@ $(document).ready(function() {
 		rewindNav: false,
 	});
 });
+
+// Electronics Owl Carousel 
+$(document).ready(function() {
+	$('#winit-slider-2').owlCarousel({
+		items: 3,
+		stagePadding: 100,
+		navigation: true,
+		pagination: true,
+		rewindNav: false,
+	});
+});
 $(document).ready(function() {
 	$('#winit-slider-2').owlCarousel({
 		navigation: true,
