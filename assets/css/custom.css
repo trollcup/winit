@@ -182,3 +182,82 @@
 .owl-carousel .owl-item {
   padding: 10px;
 }
+
+
+
+
+
+/* Brandon's custom CSS section */
+
+/* blue nav */
+.blue-dropdown {
+  background-color: #3DC7E1;
+  text-align: center;
+}
+
+ul.blue-dropdown li {
+  display: inline-block;
+}
+
+.blue-dropdown li {
+  background-color: white;
+  border: 2px solid white;
+  margin: 25px 5px;
+  width: 170px;
+  height: 49px;
+  line-height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.blue-dropdown li a { 
+  color: #3DC7E1;
+  display: block;
+}
+
+.blue-dropdown li a:hover {
+  background-color: #3DC7E1;
+  color: white;
+}
+
+/* override the hover color */
+.nav > li.active, .nav > li > a:hover, .nav > li > a:focus, .nav > li:hover > a {
+  background: #3DC7E1 none repeat
+}
+
+/* override the dropdown-menu padding */
+.dropdown-menu {
+  padding: 3px 0 0 0;
+}
+/* /blue nav */
+
+
+
+/* fixed blue nav */
+ul.fixed-blue-nav li {
+}
+/* /fixed blue nav */
+
+
+
+/* product table */
+.productsTable-wrapper {
+  background-color: #ECECEC;
+  padding: 45px auto;
+}
+
+.productsTable {
+  margin: 80px auto;
+}
+
+.productsTable td {
+  text-align: center;
+  padding: 10px;
+}
+
+.productsTable img {
+  margin: 4px auto;
+}
+/* /product table */
