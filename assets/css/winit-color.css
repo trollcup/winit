@@ -103,7 +103,8 @@ a.link,
 
 .dropdown-menu {
     /*border-top: solid #ea6153;*/
-    border: 1px solid #ccc;
+    border: none;
+    border-top: 1px solid #fff;
 }
 
 .search-box:hover .form-control {
