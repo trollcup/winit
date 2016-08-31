@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="winitApp">
 <head>
 
     <meta charset="utf-8">
@@ -502,59 +502,11 @@
             <h4 class="text-gray text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin quis auctor velit.
             </h4>
-            <div id="winit-slider-1" class="winit-slider">
-                <div class="winit-item text-center">
-                    <img src="https://cdnb.lystit.com/photos/1678-2015/11/04/gucci-us-beigeblue-gg-supreme-childrens-gg-supreme-backpack-beige-product-4-168315478-normal.jpeg" class="width-100">
-                    <h4 class="text-red">40% Full in 3 Days</h4>
-                    <h3>Olivia-Burton Women Watch</h3>
-                    <a href="#" class="btn btn-block btn-md btn-winit margin-bot-10">Winit!</a>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="winit-item text-center">
-                    <img src="http://images.bigcartel.com/product_images/122941467/fin_pegleg_brd2.jpg?auto=format&fit=max&h=1000&w=1000" class="width-100">
-                    <h4 class="text-red">40% Full in 3 Days</h4>
-                    <h3>Olivia-Burton Women Watch</h3>
-                    <a href="#" class="btn btn-block btn-md btn-winit margin-bot-10">Winit!</a>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="winit-item text-center">
-                    <img src="http://i01.i.aliimg.com/wsphoto/v0/581102529_1/New-Vintage-Fashion-Gear-Handmade-Genuine-Leather-Strap-Watches-Disc-Diamond-Women-s-Wristband-Watch-Free.jpg" class="width-100">
-                    <h4 class="text-red">40% Full in 3 Days</h4>
-                    <h3>Olivia-Burton Women Watch</h3>
-                    <a href="#" class="btn btn-block btn-md btn-winit margin-bot-10">Winit!</a>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="winit-item text-center">
-                    <img src="https://placehold.it/400x400" class="width-100">
-                    <h4 class="text-red">40% Full in 3 Days</h4>
-                    <h3>Olivia-Burton Women Watch</h3>
-                    <a href="#" class="btn btn-block btn-md btn-winit margin-bot-10">Winit!</a>
-                    <div class="social-icons">
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-                <div class="winit-item text-center">
-                    <img src="https://placehold.it/400x400" class="width-100">
-                    <h4 class="text-red">40% Full in 3 Days</h4>
-                    <h3>Olivia-Burton Women Watch</h3>
+            <div id="winit-slider-1" class="winit-slider" ng-controller="winitCtrl">
+                <div class="winit-item text-center" ng-repeat="winit in winits">
+                    <img src="{{winit.photo}}" class="width-100">
+                    <h4 class="text-red">{{winit.filled}}</h4>
+                    <h3>{{winit.title}}</h3>
                     <a href="#" class="btn btn-block btn-md btn-winit margin-bot-10">Winit!</a>
                     <div class="social-icons">
                         <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -803,8 +755,10 @@
 
 <!-- JS -->
 <script type="text/javascript" src="assets/js/jquery/jquery-1.10.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/plugins/swiper-master/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="app/app.js"></script>
 <script>
 
     var swiper = new Swiper('.swiper-container', {
