@@ -293,3 +293,78 @@ li a.active-link {
 .dropdown-menu {
   padding: 3px 0 0 0;
 }
+
+
+/*Modal window styles*/
+.modal-right {
+  padding-top: 37px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 38px;
+  text-align: center;  
+}
+
+.modal-description {
+  text-align: left;
+  color: gray;
+}
+
+.modal-description ul {
+  list-style-type: circle;
+  padding-left: 15px;
+}
+
+div.modal-right .progress {
+  border-radius: 40px;
+  height: 40px;
+}
+
+.modal-social-icons {
+  padding: 28px 0;
+}
+
+.modal-social-icons i {
+  font-size: 21px;
+  padding: 0 7px;
+}
+
+/*style for owl carousel*/
+#sync2 .item{
+    text-align: center;
+    cursor: pointer;
+}
+#sync2 .item h1{
+  font-size: 18px;
+}
+#sync2 .synced .item{
+  border: 2px solid red;
+}
+
+.modal-body .owl-theme .owl-controls .owl-buttons div {
+  background: none;
+  border-radius: 0px;
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  opacity: 1;
+  padding: 0;
+}
+
+.modal-body .owl-theme .owl-controls .owl-buttons div.owl-prev {
+  position: relative;
+  top: 72px;
+  left: -277px;
+}
+
+.modal-body .owl-theme .owl-controls .owl-buttons div.owl-next {
+  position: relative;
+  top: 72px;
+  left: 282px;
+}
+
+.modal-body .item img {
+  max-height: 400px;
+}
