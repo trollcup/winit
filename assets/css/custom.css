@@ -192,7 +192,6 @@
 /* blue nav */
 .blue-dropdown {
   background-color: #3DC7E1;
-  text-align: center;
 }
 
 ul.blue-dropdown li {
@@ -228,7 +227,6 @@ ul.blue-dropdown li {
 /* fixed blue nav */
 .fixed-blue-nav {
   background-color: #3DC7E1;
-  text-align: center;
 }
 
 ul.fixed-blue-nav li {
@@ -259,30 +257,12 @@ ul.fixed-blue-nav li {
 }
 /* /fixed blue nav */
 
-
-
-/* product table */
-.productsTable-wrapper {
-  background-color: #ECECEC;
-  padding: 45px auto;
+ul.blue-dropdown {
+  display: block;
 }
-
-.productsTable {
-  margin: 0px auto;
-}
-
-.productsTable td {
-  text-align: center;
-  padding: 10px;
-}
-
-.productsTable img {
-  margin: 4px auto;
-}
-/* /product table */
 
 /* Highlights the active link */
-li a.active {
+li a.active-link {
   background-color: #3DC7E1;
   color: white;
 }
@@ -294,6 +274,9 @@ li a.active {
 
 /* Override the navbar border to remove the red line under the links */
 .navbar {
+  border: none;
+}
+.dropdown-menu {
   border: none;
 }
 
