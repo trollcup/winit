@@ -330,18 +330,29 @@ div.modal-right .progress {
   padding: 0 7px;
 }
 
+.modal-body button.close {
+  color: red;
+  opacity: .7;
+  font-size: 35px;
+  margin-top: -6px;
+}
+
 /*style for owl carousel*/
 #sync2 .item{
     text-align: center;
     cursor: pointer;
 }
+
 #sync2 .item h1{
   font-size: 18px;
 }
+
+/*Gives a red border around the thumbnails in the modal window carousel*/
 #sync2 .synced .item{
   border: 2px solid red;
 }
 
+/*Change the style of the arrows in the modal window carousel*/
 .modal-body .owl-theme .owl-controls .owl-buttons div {
   background: none;
   border-radius: 0px;
@@ -353,12 +364,14 @@ div.modal-right .progress {
   padding: 0;
 }
 
+/*Change the location of the left arrow in the modal window carousel*/
 .modal-body .owl-theme .owl-controls .owl-buttons div.owl-prev {
   position: relative;
   top: 72px;
   left: -277px;
 }
 
+/*Change the location of the right arrow in the modal window carousel*/
 .modal-body .owl-theme .owl-controls .owl-buttons div.owl-next {
   position: relative;
   top: 72px;
