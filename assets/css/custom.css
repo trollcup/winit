@@ -257,12 +257,34 @@ ul.fixed-blue-nav li {
 }
 /* /fixed blue nav */
 
+
 ul.blue-dropdown {
   display: block;
 }
 
-.product-item img {
-  height: 350px;
+.item-image-wrapper {
+  max-height: 350px;
+  min-height: 350px;
+  min-width: auto;
+  position: relative;
+}
+
+.item-image-wrapper img {
+  bottom: 0;
+  display: inline-block;
+  height: auto;
+  left: 0;
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
+}
+
+.item-description-wrapper {
+  padding-bottom: 35px;
 }
 
 /* Highlights the active link */
@@ -331,8 +353,7 @@ div.modal-right .progress {
 }
 
 .modal-body button.close {
-  color: red;
-  opacity: .7;
+  opacity: 1;
   font-size: 35px;
   margin-top: -6px;
 }
