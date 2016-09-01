@@ -54,9 +54,9 @@ $(document).ready(function() {
 // });
 
 // Modals
-// $(window).load(function() {
-// 	$('#modal-startup').modal('show');
-// });
+$(window).load(function() {
+	$('#modal-startup').modal('show');
+});
 
 
 
