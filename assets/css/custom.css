@@ -430,7 +430,7 @@ div.item-cap {
 
 @keyframes moveButton {
     0%   {left:0px; top:0px;}
-    100% {left:-150px; top:-30px;}
+    100% {left:-30%; top:-20%;}
 }
 
 .box-slider-content:hover h3.item-title {
@@ -442,7 +442,7 @@ div.item-cap {
 
 @keyframes moveTitle {
     0%   {left:0px; top:0px;}
-    100% {left:80px; top:-120px;}
+    100% {left:20%; top:-30%;}
 }
 
 .box-slider-content:hover div.item-cap {
@@ -454,5 +454,5 @@ div.item-cap {
 
 @keyframes moveCap {
     0%   {left:0px; top:0px;}
-    100% {left:180px; top:-220px;}
+    100% {left:40%; top:-100%;}
 }
