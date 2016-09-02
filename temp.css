@@ -8,6 +8,7 @@
 /* line 53, ../sass/custom.scss */
 .inline-block {
   display: inline-block;
+  position: relative;
 }
 
 /* line 57, ../sass/custom.scss */
@@ -159,16 +160,17 @@
 .banner-span {
   position: absolute;
   left: 15px;
-  bottom: 8px;
+  bottom: 7px;
+  font-weight: bold;
 }
 
-/* line 192, ../sass/custom.scss */
+/* line 193, ../sass/custom.scss */
 .hr-red {
   width: 50px;
   border-top: 5px solid #ea6153;
 }
 
-/* line 197, ../sass/custom.scss */
+/* line 198, ../sass/custom.scss */
 .modal-backdrop {
   background-color: white;
 }
@@ -177,19 +179,26 @@
 	background: $winit-black;
 }*/
 /* OWL CAROUSEL */
-/* line 206, ../sass/custom.scss */
+/* line 207, ../sass/custom.scss */
 .owl-carousel .owl-item {
   padding: 10px;
 }
 
-/* BRANDON CSS */
+
+
+
+
+/* Brandon's custom CSS section */
+
 /* blue nav */
-/* line 214, ../sass/custom.scss */
 .blue-dropdown {
   background-color: #3DC7E1;
-  display: block;
 }
-/* line 218, ../sass/custom.scss */
+
+ul.blue-dropdown li {
+  display: inline-block;
+}
+
 .blue-dropdown li {
   background-color: white;
   border: 2px solid white;
@@ -201,26 +210,30 @@
   vertical-align: middle;
   font-weight: bold;
   font-size: 18px;
-  display: inline-block;
 }
-/* line 231, ../sass/custom.scss */
-.blue-dropdown li a {
+
+.blue-dropdown li a { 
   color: #3DC7E1;
   display: block;
 }
-/* line 236, ../sass/custom.scss */
+
 .blue-dropdown li a:hover {
   background-color: #3DC7E1;
   color: white;
 }
-
 /* /blue nav */
+
+
+
 /* fixed blue nav */
-/* line 246, ../sass/custom.scss */
 .fixed-blue-nav {
   background-color: #3DC7E1;
 }
-/* line 249, ../sass/custom.scss */
+
+ul.fixed-blue-nav li {
+  display: inline-block;
+}
+
 .fixed-blue-nav li {
   background-color: white;
   border: 2px solid white;
@@ -232,28 +245,31 @@
   vertical-align: middle;
   font-weight: bold;
   font-size: 18px;
-  display: inline-block;
 }
-/* line 262, ../sass/custom.scss */
-.fixed-blue-nav li a {
+
+.fixed-blue-nav li a { 
   color: #3DC7E1;
   display: block;
 }
-/* line 267, ../sass/custom.scss */
+
 .fixed-blue-nav li a:hover {
   background-color: #3DC7E1;
   color: white;
 }
-
 /* /fixed blue nav */
-/* line 275, ../sass/custom.scss */
+
+
+ul.blue-dropdown {
+  display: block;
+}
+
 .item-image-wrapper {
   max-height: 350px;
   min-height: 350px;
   min-width: auto;
   position: relative;
 }
-/* line 281, ../sass/custom.scss */
+
 .item-image-wrapper img {
   bottom: 0;
   display: inline-block;
@@ -268,108 +284,97 @@
   width: auto;
 }
 
-/* line 296, ../sass/custom.scss */
 .item-description-wrapper {
   padding-bottom: 35px;
 }
 
 /* Highlights the active link */
-/* line 301, ../sass/custom.scss */
 li a.active-link {
   background-color: #3DC7E1;
   color: white;
 }
 
 /* Gives enough padding so the navbar doesn't cover the content */
-/* line 307, ../sass/custom.scss */
 .content-wrapper {
   padding-top: 83px;
 }
 
 /* Override the navbar border to remove the red line under the links */
-/* line 312, ../sass/custom.scss */
-.navbar, .dropdown-menu {
+.navbar {
+  border: none;
+}
+.dropdown-menu {
   border: none;
 }
 
 /* override the hover color */
-/* line 317, ../sass/custom.scss */
 .nav > li.active, .nav > li > a:hover, .nav > li > a:focus, .nav > li:hover > a {
-  background: #3DC7E1 none repeat;
+  background: #3DC7E1 none repeat
 }
 
 /* override the dropdown-menu padding */
-/* line 322, ../sass/custom.scss */
 .dropdown-menu {
   padding: 3px 0 0 0;
 }
 
-/* Modal window styles */
-/* line 327, ../sass/custom.scss */
+
+/*Modal window styles*/
 .modal-right {
   padding-top: 37px;
 }
 
-/* line 331, ../sass/custom.scss */
 .modal-title {
   font-weight: bold;
   font-size: 38px;
-  text-align: center;
+  text-align: center;  
 }
 
-/* line 337, ../sass/custom.scss */
 .modal-description {
   text-align: left;
   color: gray;
 }
-/* line 341, ../sass/custom.scss */
+
 .modal-description ul {
   list-style-type: circle;
   padding-left: 15px;
 }
 
-/* line 347, ../sass/custom.scss */
 div.modal-right .progress {
   border-radius: 40px;
   height: 40px;
 }
 
-/* line 352, ../sass/custom.scss */
 .modal-social-icons {
   padding: 28px 0;
 }
-/* line 355, ../sass/custom.scss */
+
 .modal-social-icons i {
   font-size: 21px;
   padding: 0 7px;
 }
 
-/* line 361, ../sass/custom.scss */
 .modal-body button.close {
   opacity: 1;
   font-size: 35px;
   margin-top: -6px;
 }
 
-/* style for owl carousel */
-/* line 368, ../sass/custom.scss */
-#sync2 .item {
-  text-align: center;
-  cursor: pointer;
+/*style for owl carousel*/
+#sync2 .item{
+    text-align: center;
+    cursor: pointer;
 }
-/* line 372, ../sass/custom.scss */
-#sync2 .item h1 {
+
+#sync2 .item h1{
   font-size: 18px;
 }
 
-/* Gives a red border around the thumbnails in the modal window carousel */
-/* line 378, ../sass/custom.scss */
-#sync2 .synced .item {
+/*Gives a red border around the thumbnails in the modal window carousel*/
+#sync2 .synced .item{
   border: 2px solid red;
 }
 
-/* Change the style of the arrows for the carousel in the modal window */
-/* line 383, ../sass/custom.scss */
+/*Change the style of the arrows in the modal window carousel*/
 .modal-body .owl-theme .owl-controls .owl-buttons div {
   background: none;
   border-radius: 0px;
@@ -381,35 +386,29 @@ div.modal-right .progress {
   padding: 0;
 }
 
-/* Change the location of the carousel left arrow in the modal window */
-/* TODO: Make this more responsive */
-/* line 396, ../sass/custom.scss */
+/*Change the location of the left arrow in the modal window carousel*/
 .modal-body .owl-theme .owl-controls .owl-buttons div.owl-prev {
   position: relative;
   top: 72px;
   left: -277px;
 }
 
-/* Change the location of the carousel right arrow in the modal window */
-/* TODO: Make this more responsive */
-/* line 404, ../sass/custom.scss */
+/*Change the location of the right arrow in the modal window carousel*/
 .modal-body .owl-theme .owl-controls .owl-buttons div.owl-next {
   position: relative;
   top: 72px;
   left: 282px;
 }
 
-/* line 410, ../sass/custom.scss */
 .modal-body .item img {
   max-height: 400px;
 }
 
-/* line 415, ../sass/custom.scss */
-h3.item-title, div.item-cap {
+
+h3.item-title, div.item-cap  {
   position: relative;
 }
 
-/* line 419, ../sass/custom.scss */
 div.item-cap {
   top: 50px;
   border-radius: 45px;
@@ -418,182 +417,42 @@ div.item-cap {
   height: 65px;
 }
 
-/* line 427, ../sass/custom.scss */
 .item-title {
   font-size: 30px;
 }
 
-/* line 431, ../sass/custom.scss */
-.item-button {
-  position: relative;
-}
-
-/* line 435, ../sass/custom.scss */
 .box-slider-content:hover a.item-button {
   animation-name: moveButton;
   animation-duration: .1s;
-  animation-timing-function: linear;
+  animation-timing-function: linear;  
   animation-fill-mode: forwards;
 }
 
 @keyframes moveButton {
-  from {
-    left: 0px;
-    top: 0px;
-  }
-  to {
-    left: -80px;
-    top: -20px;
-  }
+    0%   {left:0px; top:0px;}
+    100% {left:-30%; top:-20%;}
 }
-/* line 447, ../sass/custom.scss */
+
 .box-slider-content:hover h3.item-title {
   animation-name: moveTitle;
   animation-duration: .1s;
-  animation-timing-function: linear;
+  animation-timing-function: linear;  
   animation-fill-mode: forwards;
 }
 
 @keyframes moveTitle {
-  from {
-    left: 0px;
-    top: 0px;
-  }
-  to {
-    left: 20px;
-    top: -30px;
-  }
+    0%   {left:0px; top:0px;}
+    100% {left:20%; top:-30%;}
 }
-/* line 459, ../sass/custom.scss */
+
 .box-slider-content:hover div.item-cap {
   animation-name: moveCap;
   animation-duration: .1s;
-  animation-timing-function: linear;
+  animation-timing-function: linear;  
   animation-fill-mode: forwards;
 }
 
 @keyframes moveCap {
-  from {
-    left: 0px;
-    top: 0px;
-  }
-  to {
-    left: 130px;
-    top: -110px;
-  }
-}
-/*responsive css*/
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  /* line 475, ../sass/custom.scss */
-  .box-slider-content:hover a.item-button {
-    animation-name: moveButton;
-    animation-duration: .1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes moveButton {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    100% {
-      left: -75px;
-      top: -20px;
-    }
-  }
-  /* line 487, ../sass/custom.scss */
-  .box-slider-content:hover h3.item-title {
-    animation-name: moveTitle;
-    animation-duration: .1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes moveTitle {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    100% {
-      left: 20px;
-      top: -30px;
-    }
-  }
-  /* line 499, ../sass/custom.scss */
-  .box-slider-content:hover div.item-cap {
-    animation-name: moveCap;
-    animation-duration: .1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes moveCap {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    100% {
-      left: 140px;
-      top: -110px;
-    }
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  /* line 513, ../sass/custom.scss */
-  .box-slider-content:hover a.item-button {
-    animation-name: moveButton;
-    animation-duration: .1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes moveButton {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    100% {
-      left: -140px;
-      top: -20px;
-    }
-  }
-  /* line 525, ../sass/custom.scss */
-  .box-slider-content:hover h3.item-title {
-    animation-name: moveTitle;
-    animation-duration: .1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes moveTitle {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    100% {
-      left: 20%;
-      top: -30px;
-    }
-  }
-  /* line 537, ../sass/custom.scss */
-  .box-slider-content:hover div.item-cap {
-    animation-name: moveCap;
-    animation-duration: .1s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-  }
-
-  @keyframes moveCap {
-    0% {
-      left: 0px;
-      top: 0px;
-    }
-    100% {
-      left: 200px;
-      top: -110px;
-    }
-  }
+    0%   {left:0px; top:0px;}
+    100% {left:40%; top:-100%;}
 }
