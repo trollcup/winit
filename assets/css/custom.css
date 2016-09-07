@@ -5,51 +5,56 @@
 /*  MEDIA QUERIES SETTINGS
 /* ----------------------------------------------------------- */
 /* position presets */
-/* line 53, ../sass/custom.scss */
+/* line 54, ../sass/custom.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 57, ../sass/custom.scss */
+/* line 58, ../sass/custom.scss */
 .width-100 {
   width: 100%;
   margin-bottom: 10px;
 }
 
-/* line 62, ../sass/custom.scss */
+/* line 63, ../sass/custom.scss */
 .no-margin {
   margin: 0;
 }
 
-/* line 66, ../sass/custom.scss */
+/* line 67, ../sass/custom.scss */
 .margin-bot-10 {
   margin-bottom: 10px;
 }
 
 /* background presets */
-/* line 70, ../sass/custom.scss */
+/* line 71, ../sass/custom.scss */
 .bg-light-gray {
   background: #fafafa;
 }
 
 /* text color presets */
-/* line 75, ../sass/custom.scss */
+/* line 76, ../sass/custom.scss */
 .text-red {
-  color: #ea6153;
+  color: #e74c3c;
 }
 
-/* line 79, ../sass/custom.scss */
+/* line 80, ../sass/custom.scss */
 .text-gray {
   color: #808080;
 }
 
-/* custom css */
 /* line 84, ../sass/custom.scss */
+.text-green {
+  color: #2ecc71;
+}
+
+/* custom css */
+/* line 89, ../sass/custom.scss */
 .winit-image {
   padding: 5px;
 }
 
-/* line 88, ../sass/custom.scss */
+/* line 93, ../sass/custom.scss */
 .winit-panel-body span {
   padding: 5px;
   background: #2ecc71;
@@ -58,12 +63,12 @@
   top: 35px;
 }
 
-/* line 96, ../sass/custom.scss */
+/* line 101, ../sass/custom.scss */
 .swiper-pagination-bullet-active {
-  background: #ea6153;
+  background: #e74c3c;
 }
 
-/* line 100, ../sass/custom.scss */
+/* line 105, ../sass/custom.scss */
 .parallax-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("http://static2.businessinsider.com/image/56d47fa66e97c623008ba5d5-1200/no-10-porsche-911-carrera-gt3-rs--3212.jpg") no-repeat fixed;
   background-size: cover;
@@ -71,18 +76,18 @@
   background-attachment: fixed;
 }
 
-/* line 112, ../sass/custom.scss */
+/* line 117, ../sass/custom.scss */
 .parallax-content {
   padding: 100px 0;
   color: #fff;
 }
 
-/* line 117, ../sass/custom.scss */
+/* line 122, ../sass/custom.scss */
 .panel-footer {
   text-align: center;
 }
 
-/* line 121, ../sass/custom.scss */
+/* line 126, ../sass/custom.scss */
 .section-title {
   border-bottom: 2px solid #DDDDDD;
   border-top: 2px solid #DDDDDD;
@@ -92,7 +97,7 @@
   padding: 0;
 }
 
-/* line 130, ../sass/custom.scss */
+/* line 135, ../sass/custom.scss */
 .section-title span {
   color: #454545;
   display: inline-block;
@@ -101,7 +106,7 @@
   widows: auto;
 }
 
-/* line 138, ../sass/custom.scss */
+/* line 143, ../sass/custom.scss */
 .carousel-nav {
   font-size: 26px;
   margin-left: 10px;
@@ -109,39 +114,39 @@
   padding-top: 3px;
 }
 
-/* line 145, ../sass/custom.scss */
+/* line 150, ../sass/custom.scss */
 #other-winits li {
   float: left;
   display: inline-block;
 }
 
-/* line 150, ../sass/custom.scss */
+/* line 155, ../sass/custom.scss */
 .startUpContent .modal-dialog {
   border: 3px solid #ea6153;
 }
 
-/* line 154, ../sass/custom.scss */
+/* line 159, ../sass/custom.scss */
 .startUpContent .modal-dialog .modal-content .modal-body {
   padding: 50px;
 }
 
 @media (max-width: 767px) {
-  /* line 159, ../sass/custom.scss */
+  /* line 164, ../sass/custom.scss */
   #nextWinit {
     display: none;
   }
 
-  /* line 162, ../sass/custom.scss */
+  /* line 167, ../sass/custom.scss */
   #prevWinit {
     display: none;
   }
 }
-/* line 170, ../sass/custom.scss */
+/* line 175, ../sass/custom.scss */
 .winsit-list {
   margin-bottom: 25px;
 }
 
-/* line 174, ../sass/custom.scss */
+/* line 179, ../sass/custom.scss */
 .icon-box {
   max-width: 65px;
   max-height: 55px;
@@ -149,13 +154,13 @@
   float: left;
 }
 
-/* line 181, ../sass/custom.scss */
+/* line 186, ../sass/custom.scss */
 .winsit-text {
   max-width: 450px;
   padding-left: 100px;
 }
 
-/* line 186, ../sass/custom.scss */
+/* line 191, ../sass/custom.scss */
 .banner-span {
   position: absolute;
   left: 10px;
@@ -163,242 +168,43 @@
   border-bottom: 5px solid red;
 }
 
-/* line 193, ../sass/custom.scss */
+/* line 198, ../sass/custom.scss */
 .hr-red {
   width: 50px;
   border-top: 5px solid #ea6153;
 }
 
-/* line 198, ../sass/custom.scss */
+/* line 203, ../sass/custom.scss */
 .modal-backdrop {
   background-color: white;
+}
+
+/* line 207, ../sass/custom.scss */
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+  background: #fff;
+  border-radius: 0px;
+  color: #e74c3c;
+}
+/* line 211, ../sass/custom.scss */
+.nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus:hover {
+  background: #fff;
+}
+
+/* line 216, ../sass/custom.scss */
+.nav-pills > li > a {
+  background: #e74c3c;
+  color: #fff;
+}
+/* line 219, ../sass/custom.scss */
+.nav-pills > li > a:hover {
+  background: #e74c3c;
 }
 
 /*.footer {
 	background: $winit-black;
 }*/
 /* OWL CAROUSEL */
-/* line 207, ../sass/custom.scss */
+/* line 229, ../sass/custom.scss */
 .owl-carousel .owl-item {
   padding: 10px;
-}
-
-
-
-
-
-/* Brandon's custom CSS section */
-
-/* blue nav */
-.blue-dropdown {
-  background-color: #3DC7E1;
-}
-
-ul.blue-dropdown li {
-  display: inline-block;
-}
-
-.blue-dropdown li {
-  background-color: white;
-  border: 2px solid white;
-  margin: 25px 5px;
-  width: 170px;
-  height: 49px;
-  line-height: 45px;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.blue-dropdown li a { 
-  color: #3DC7E1;
-  display: block;
-}
-
-.blue-dropdown li a:hover {
-  background-color: #3DC7E1;
-  color: white;
-}
-/* /blue nav */
-
-
-
-/* fixed blue nav */
-.fixed-blue-nav {
-  background-color: #3DC7E1;
-}
-
-ul.fixed-blue-nav li {
-  display: inline-block;
-}
-
-.fixed-blue-nav li {
-  background-color: white;
-  border: 2px solid white;
-  margin: 25px 5px;
-  width: 170px;
-  height: 49px;
-  line-height: 45px;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-.fixed-blue-nav li a { 
-  color: #3DC7E1;
-  display: block;
-}
-
-.fixed-blue-nav li a:hover {
-  background-color: #3DC7E1;
-  color: white;
-}
-/* /fixed blue nav */
-
-
-ul.blue-dropdown {
-  display: block;
-}
-
-.item-image-wrapper {
-  max-height: 350px;
-  min-height: 350px;
-  min-width: auto;
-  position: relative;
-}
-
-.item-image-wrapper img {
-  bottom: 0;
-  display: inline-block;
-  height: auto;
-  left: 0;
-  margin: auto;
-  max-height: 100%;
-  max-width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: auto;
-}
-
-.item-description-wrapper {
-  padding-bottom: 35px;
-}
-
-/* Highlights the active link */
-li a.active-link {
-  background-color: #3DC7E1;
-  color: white;
-}
-
-/* Gives enough padding so the navbar doesn't cover the content */
-.content-wrapper {
-  padding-top: 83px;
-}
-
-/* Override the navbar border to remove the red line under the links */
-.navbar {
-  border: none;
-}
-.dropdown-menu {
-  border: none;
-}
-
-/* override the hover color */
-.nav > li.active, .nav > li > a:hover, .nav > li > a:focus, .nav > li:hover > a {
-  background: #3DC7E1 none repeat
-}
-
-/* override the dropdown-menu padding */
-.dropdown-menu {
-  padding: 3px 0 0 0;
-}
-
-
-/*Modal window styles*/
-.modal-right {
-  padding-top: 37px;
-}
-
-.modal-title {
-  font-weight: bold;
-  font-size: 38px;
-  text-align: center;  
-}
-
-.modal-description {
-  text-align: left;
-  color: gray;
-}
-
-.modal-description ul {
-  list-style-type: circle;
-  padding-left: 15px;
-}
-
-div.modal-right .progress {
-  border-radius: 40px;
-  height: 40px;
-}
-
-.modal-social-icons {
-  padding: 28px 0;
-}
-
-.modal-social-icons i {
-  font-size: 21px;
-  padding: 0 7px;
-}
-
-.modal-body button.close {
-  opacity: 1;
-  font-size: 35px;
-  margin-top: -6px;
-}
-
-/*style for owl carousel*/
-#sync2 .item{
-    text-align: center;
-    cursor: pointer;
-}
-
-#sync2 .item h1{
-  font-size: 18px;
-}
-
-/*Gives a red border around the thumbnails in the modal window carousel*/
-#sync2 .synced .item{
-  border: 2px solid red;
-}
-
-/*Change the style of the arrows in the modal window carousel*/
-.modal-body .owl-theme .owl-controls .owl-buttons div {
-  background: none;
-  border-radius: 0px;
-  color: black;
-  font-size: 35px;
-  font-weight: bold;
-  margin: 0;
-  opacity: 1;
-  padding: 0;
-}
-
-/*Change the location of the left arrow in the modal window carousel*/
-.modal-body .owl-theme .owl-controls .owl-buttons div.owl-prev {
-  position: relative;
-  top: 72px;
-  left: -277px;
-}
-
-/*Change the location of the right arrow in the modal window carousel*/
-.modal-body .owl-theme .owl-controls .owl-buttons div.owl-next {
-  position: relative;
-  top: 72px;
-  left: 282px;
-}
-
-.modal-body .item img {
-  max-height: 400px;
 }

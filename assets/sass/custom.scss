@@ -1,11 +1,12 @@
 /* ----------------------------------------------------------- */
 /*  COLORS
 /* ----------------------------------------------------------- */
-$winit-red: #ea6153;
-$winit-red-light: #e74c3c;
+$winit-red: #e74c3c;
+$winit-red-light: #ea6153;
 $winit-gray: #808080;
 $winit-gray-light: #fafafa;
 $winit-black: #22313F;
+$winit-green: #2ecc71;
 
 /* ----------------------------------------------------------- */
 /*  MEDIA QUERIES SETTINGS
@@ -78,6 +79,10 @@ $iphone-width: 320px;
 
 .text-gray {
 	color: $winit-gray;
+}
+
+.text-green {
+	color: $winit-green;
 }
 
 /* custom css */
@@ -197,6 +202,23 @@ $iphone-width: 320px;
 
 .modal-backdrop {
    background-color: white;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
+	background: #fff;
+	border-radius: 0px;
+	color: $winit-red;
+	&:hover {
+		background: #fff;
+	}
+}
+
+.nav-pills > li > a {
+	background: $winit-red;
+	color: #fff;
+	&:hover {
+		background: $winit-red;
+	}
 }
 
 /*.footer {
