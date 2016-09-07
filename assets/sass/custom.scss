@@ -1,12 +1,11 @@
 /* ----------------------------------------------------------- */
 /*  COLORS
 /* ----------------------------------------------------------- */
-$winit-red: #e74c3c;
-$winit-red-light: #ea6153;
+$winit-red: #ea6153;
+$winit-red-light: #e74c3c;
 $winit-gray: #808080;
 $winit-gray-light: #fafafa;
 $winit-black: #22313F;
-$winit-green: #2ecc71;
 
 /* ----------------------------------------------------------- */
 /*  MEDIA QUERIES SETTINGS
@@ -79,10 +78,6 @@ $iphone-width: 320px;
 
 .text-gray {
 	color: $winit-gray;
-}
-
-.text-green {
-	color: $winit-green;
 }
 
 /* custom css */
@@ -203,23 +198,6 @@ $iphone-width: 320px;
    background-color: white;
 }
 
-.nav-pills > li.active > a, .nav-pills > li.active > a:focus {
-	background: #fff;
-	border-radius: 0px;
-	color: $winit-red;
-	&:hover {
-		background: #fff;
-	}
-}
-
-.nav-pills > li > a {
-	background: $winit-red;
-	color: #fff;
-	&:hover {
-		background: $winit-red;
-	}
-}
-
 /*.footer {
 	background: $winit-black;
 }*/
@@ -229,7 +207,6 @@ $iphone-width: 320px;
 	padding: 10px;
 }
 
-<<<<<<< HEAD
 
 /* BRANDON CSS */
 
@@ -387,143 +364,10 @@ div.modal-right .progress {
 	margin-top: -6px;
 }
 
-=======
-/* BRANDON CSS */
-/* blue nav */
-.blue-dropdown {
-    background-color: #3DC7E1;
-    display: block;
-    li {
-        background-color: white;
-        border: 2px solid white;
-        margin: 25px 5px;
-        width: 170px;
-        height: 49px;
-        line-height: 45px;
-        text-align: center;
-        vertical-align: middle;
-        font-weight: bold;
-        font-size: 18px;
-        display: inline-block;
-        a { 
-            color: #3DC7E1;
-            display: block;
-        }
-        a:hover {
-            background-color: #3DC7E1;
-            color: white;
-        }
-    }
-}
-/* /blue nav */
-/* fixed blue nav */
-.fixed-blue-nav {
-    background-color: #3DC7E1;
-    li {
-        background-color: white;
-        border: 2px solid white;
-        margin: 25px 5px;
-        width: 170px;
-        height: 49px;
-        line-height: 45px;
-        text-align: center;
-        vertical-align: middle;
-        font-weight: bold;
-        font-size: 18px;
-        display: inline-block;
-        a { 
-            color: #3DC7E1;
-            display: block;
-        }
-        a:hover {
-            background-color: #3DC7E1;
-            color: white;
-        }
-    }
-}
-/* /fixed blue nav */
-.item-image-wrapper {
-    max-height: 350px;
-    min-height: 350px;
-    min-width: auto;
-    position: relative;
-    img {
-        bottom: 0;
-        display: inline-block;
-        height: auto;
-        left: 0;
-        margin: auto;
-        max-height: 100%;
-        max-width: 100%;
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: auto;
-    }
-}
-.item-description-wrapper {
-    padding-bottom: 35px;
-}
-/* Highlights the active link */
-li a.active-link {
-    background-color: #3DC7E1;
-    color: white;
-}
-/* Gives enough padding so the navbar doesn't cover the content */
-.content-wrapper {
-    padding-top: 83px;
-}
-/* Override the navbar border to remove the red line under the links */
-.navbar, .dropdown-menu {
-    border: none;
-}
-/* override the hover color */
-.nav > li.active, .nav > li > a:hover, .nav > li > a:focus, .nav > li:hover > a {
-    background: #3DC7E1 none repeat
-}
-/* override the dropdown-menu padding */
-.dropdown-menu {
-    padding: 3px 0 0 0;
-}
-/* Modal window styles */
-.modal-right {
-    padding-top: 37px;
-}
-.modal-title {
-    font-weight: bold;
-    font-size: 38px;
-    text-align: center;  
-}
-.modal-description {
-    text-align: left;
-    color: gray;
-    ul {
-        list-style-type: circle;
-        padding-left: 15px;
-    }
-}
-div.modal-right .progress {
-    border-radius: 40px;
-    height: 40px;
-}
-.modal-social-icons {
-    padding: 28px 0;
-    i {
-        font-size: 21px;
-        padding: 0 7px;
-    }
-}
-.modal-body button.close {
-    opacity: 1;
-    font-size: 35px;
-    margin-top: -6px;
-}
->>>>>>> 89869926110b7ba18384758cf44a6ce0cd6f5593
 /* style for owl carousel */
 #sync2 .item{
     text-align: center;
     cursor: pointer;
-<<<<<<< HEAD
 
 	h1 {
 		font-size: 18px;
@@ -595,66 +439,6 @@ div.item-cap {
 	animation-fill-mode: forwards;
 }
 
-=======
-    h1 {
-        font-size: 18px;
-    }
-}
-/* Gives a red border around the thumbnails in the modal window carousel */
-#sync2 .synced .item{
-    border: 2px solid red;
-}
-/* Change the style of the arrows for the carousel in the modal window */
-.modal-body .owl-theme .owl-controls .owl-buttons div {
-    background: none;
-    border-radius: 0px;
-    color: black;
-    font-size: 35px;
-    font-weight: bold;
-    margin: 0;
-    opacity: 1;
-    padding: 0;
-}
-/* Change the location of the carousel left arrow in the modal window */
-/* TODO: Make this more responsive */
-.modal-body .owl-theme .owl-controls .owl-buttons div.owl-prev {
-    position: relative;
-    top: 72px;
-    left: -277px;
-}
-/* Change the location of the carousel right arrow in the modal window */
-/* TODO: Make this more responsive */
-.modal-body .owl-theme .owl-controls .owl-buttons div.owl-next {
-    position: relative;
-    top: 72px;
-    left: 282px;
-}
-.modal-body .item img {
-    max-height: 400px;
-}
-h3.item-title, div.item-cap  {
-    position: relative;
-}
-div.item-cap {
-    top: 50px;
-    border-radius: 45px;
-    background: #e74c3c;
-    width: 65px;
-    height: 65px;
-}
-.item-title {
-    font-size: 30px;
-}
-.item-button {
-    position: relative;
-}
-.box-slider-content:hover a.item-button {
-    animation-name: moveButton;
-    animation-duration: .1s;
-    animation-timing-function: linear;  
-    animation-fill-mode: forwards;
-}
-
 @keyframes moveButton {
     from {left:0px; top:0px;}
     to   {left:-80px; top:-20px;}
@@ -665,94 +449,6 @@ div.item-cap {
 	animation-duration: .1s;
 	animation-timing-function: linear;  
 	animation-fill-mode: forwards;
-
-.box-slider-content:hover h3.item-title {
-    animation-name: moveTitle;
-    animation-duration: .1s;
-    animation-timing-function: linear;  
-    animation-fill-mode: forwards;
-}
-@keyframes moveTitle {
-    from {left:0px; top:0px;}
-    to   {left:20px; top:-30px;}
-}
-.box-slider-content:hover div.item-cap {
-    animation-name: moveCap;
-    animation-duration: .1s;
-    animation-timing-function: linear;  
-    animation-fill-mode: forwards;
-}
-@keyframes moveCap {
-    from {left:0px; top:0px;}
-    to   {left:130px; top:-110px;}
-}
-/*responsive css*/
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .box-slider-content:hover a.item-button {
-        animation-name: moveButton;
-        animation-duration: .1s;
-        animation-timing-function: linear;  
-        animation-fill-mode: forwards;
-    }
-    @keyframes moveButton {
-        0%   {left:0px; top:0px;}
-        100% {left:-75px; top:-20px;}
-    }
-    .box-slider-content:hover h3.item-title {
-        animation-name: moveTitle;
-        animation-duration: .1s;
-        animation-timing-function: linear;  
-        animation-fill-mode: forwards;
-    }
-    @keyframes moveTitle {
-        0%   {left:0px; top:0px;}
-        100% {left:20px; top:-30px;}
-    }
-    .box-slider-content:hover div.item-cap {
-        animation-name: moveCap;
-        animation-duration: .1s;
-        animation-timing-function: linear;  
-        animation-fill-mode: forwards;
-    }
-    @keyframes moveCap {
-        0%   {left:0px; top:0px;}
-        100% {left:140px; top:-110px;}
-    }
-}
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .box-slider-content:hover a.item-button {
-        animation-name: moveButton;
-        animation-duration: .1s;
-        animation-timing-function: linear;  
-        animation-fill-mode: forwards;
-    }
-    @keyframes moveButton {
-        0%   {left:0px; top:0px;}
-        100% {left:-140px; top:-20px;}
-    }
-    .box-slider-content:hover h3.item-title {
-        animation-name: moveTitle;
-        animation-duration: .1s;
-        animation-timing-function: linear;  
-        animation-fill-mode: forwards;
-    }
-    @keyframes moveTitle {
-        0%   {left:0px; top:0px;}
-        100% {left:20%; top:-30px;}
-    }
-    .box-slider-content:hover div.item-cap {
-        animation-name: moveCap;
-        animation-duration: .1s;
-        animation-timing-function: linear;  
-        animation-fill-mode: forwards;
-    }
-    @keyframes moveCap {
-        0%   {left:0px; top:0px;}
-        100% {left:200px; top:-110px;}
-    }
->>>>>>> 89869926110b7ba18384758cf44a6ce0cd6f5593
 }
 
 @keyframes moveTitle {
