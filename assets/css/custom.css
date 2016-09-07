@@ -8,6 +8,7 @@
 /* line 54, ../sass/custom.scss */
 .inline-block {
   display: inline-block;
+  position: relative;
 }
 
 /* line 58, ../sass/custom.scss */
@@ -163,9 +164,9 @@
 /* line 191, ../sass/custom.scss */
 .banner-span {
   position: absolute;
-  left: 10px;
-  bottom: 0;
-  border-bottom: 5px solid red;
+  left: 15px;
+  bottom: 7px;
+  font-weight: bold;
 }
 
 /* line 198, ../sass/custom.scss */
@@ -207,4 +208,61 @@
 /* line 229, ../sass/custom.scss */
 .owl-carousel .owl-item {
   padding: 10px;
+}
+
+.modal-body .item img {
+  max-height: 400px;
+}
+
+
+h3.item-title, div.item-cap  {
+  position: relative;
+}
+
+div.item-cap {
+  top: 50px;
+  border-radius: 45px;
+  background: #e74c3c;
+  width: 65px;
+  height: 65px;
+}
+
+.item-title {
+  font-size: 30px;
+}
+
+.box-slider-content:hover a.item-button {
+  animation-name: moveButton;
+  animation-duration: .1s;
+  animation-timing-function: linear;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveButton {
+    0%   {left:0px; top:0px;}
+    100% {left:-30%; top:-20%;}
+}
+
+.box-slider-content:hover h3.item-title {
+  animation-name: moveTitle;
+  animation-duration: .1s;
+  animation-timing-function: linear;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveTitle {
+    0%   {left:0px; top:0px;}
+    100% {left:20%; top:-30%;}
+}
+
+.box-slider-content:hover div.item-cap {
+  animation-name: moveCap;
+  animation-duration: .1s;
+  animation-timing-function: linear;  
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveCap {
+    0%   {left:0px; top:0px;}
+    100% {left:40%; top:-100%;}
 }
